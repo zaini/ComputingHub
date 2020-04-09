@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>converting between different number systems (denary, binary, hexadecimal)</title>
+    <link rel="icon" type="image/png" href="../../apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../apple-touch-icon-76x76.png">
+</head>
+
+<body>
+    <div class="heading">
+        <div class="inner">
+            <h1 class="tit">converting between</br>different number systems</h1>
+            <img id="spec" src="../../VECTORS/spec.png">
+        </div>
+    </div>
+
+    <h2><a href="../../content.html">index</a> > 2.1.4 Representation of data in computer systems</h2>
+
+
+    <div id="selection">
+
+    <h3 class="tital">Numbers</h3>
+    <p>Denary is the base-10 number system which we use everyday. It has 10 different digits: 0,1,2,3,4,5,6,7,8 and 9. This is used by people because it is easy to understand and learn.</p>
+
+    <p>Computers use binary to store all data and instructions. Each of the binary numbers is called a bit (Binary digit)
+Computers use binary and logic gates to make calculations.
+Binary is in 1s and 0s. 1 represents ON and 0 represents OFF. You can use these basic inputs/outputs and boolean logic to create a system for operations.
+Binary is usually written in 8 bits which means it has 8 digits. E.g. 01001001</p>
+    <ul id="vids">
+        <li class="vidsin"><iframe class="sub" width="280" height="157.5" src="https://www.youtube.com/embed/LpuPe81bc2w" frameborder="0" allowfullscreen></iframe></li>
+
+        <li class="vidsin"><iframe class="sub" width="280" height="157.5" src="https://www.youtube.com/embed/SPWp0Xdr16o" frameborder="0" allowfullscreen></iframe></li>
+    </ul>
+
+    <a id="converting"><h3 class="tital">Converting Binary and Denary</h3></a>
+
+    <p>We can convert from binary to denary or from denary to binary using the table below:</p>
+    <table style="width:700px">
+      <tr>
+        <th>128</th>
+        <th>64</th>
+        <th>32</th>
+        <th>16</th>
+        <th>8</th>
+        <th>4</th>
+        <th>2</th>
+        <th>1</th>
+      </tr>
+        <td>2<sup>7</sup></td>
+        <td>2<sup>6</sup></td>
+        <td>2<sup>5</sup></td> 
+        <td>2<sup>4</sup></td> 
+        <td>2<sup>3</sup></td> 
+        <td>2<sup>2</sup></td> 
+        <td>2<sup>1</sup></td> 
+        <td>2<sup>0</sup></td> 
+      </tr>
+    </table>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+    <p>In order to find out what the denary equivalent of a binary string is, we need to put the binary string and the denary equivalents into the table and add together the column values where there is a &#8217;1&#8217;. Here is an example of the conversion of 00110100 into denary:</p>
+    <table style="width:700px">
+      <tr>
+        <th>128</th>
+        <th>64</th>
+        <th>32</th>
+        <th>16</th>
+        <th>8</th>
+        <th>4</th>
+        <th>2</th>
+        <th>1</th>
+      </tr>
+        <td>0</td>
+        <td>0</td>
+        <th>1</th> 
+        <th>1</th> 
+        <td>0</td> 
+        <th>1</th> 
+        <td>0</td> 
+        <td>0</td> 
+      </tr>
+    </table>
+
+</br>
+    <p>32 + 16 + 4 = 50
+    Therefore 00110100 = 50</p>
+</br>
+    <p>The method to convert from denary to binary is less straightforward, but can be understood with some practice.</br>
+    The method you will learn here is to half the denary number, and if there is a reminder, record a 1, otherwise leave it as a 0. You keep halving until you reach 0.
+    Here is an example of converting 231 into binary:</p>
+
+    <table style="width:400px">
+      <tr>
+        <th>Result</th>
+        <th>Remainder Yes/No</th>
+      </tr>
+      <tr>
+        <td>231 &divide; 2 = 115.5</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>115 &divide; 2 = 57.5</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>57 &divide; 2 = 28.5</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>28 &divide; 2 = 14</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>14 &divide; 2 = 7</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>7 &divide; 2 = 3.5</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>3 &divide; 2 = 1.5</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>1 &divide; 2 = 0.5</td>
+        <td>1</td>
+      </tr>
+    </table>
+</br>
+    <p>This tells us that 231 = 11100111</p>
+
+    <h3 class="tital">Adding binary numbers:</h3>
+
+    <p>Sometimes it is more efficient to add 2 binary numbers without having to convert them into denary and convert back to binary. In order to do so, there are some mathematical laws that need to be followed:</p>
+
+    <ol>
+        <li>0 + 0 = 0</li>
+        <li>1 + 0 = 1</li>
+        <li>1 + 1 =  10 (so write 0 and carry the 1)</li>
+        <li>1 + 1 + 0 =  10 (so write 0 and carry the 1)</li>
+        <li>1 + 1 + 1 = 11 (so write 1 and carry the other 1)</li>
+    </ol>
+
+    <p>Here is an example of the addition of 01110100 (116) + 10001010 (138):</p>
+    <table style="width:700px">
+      <tr>
+        <td></td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <th>116</th>
+      </tr>
+      <tr>
+        <td>+</td>
+        <td>1</td>
+        <td>0</td> 
+        <td>0</td> 
+        <td>0</td> 
+        <td>1</td> 
+        <td>0</td> 
+        <td>1</td> 
+        <td>0</td> 
+        <th>138</th> 
+      </tr>
+      <tr>
+        <th></th>
+        <th>1</th>
+        <th>1</th> 
+        <th>1</th> 
+        <th>1</th> 
+        <th>1</th> 
+        <th>1</th> 
+        <th>1</th> 
+        <th>0</th> 
+        <th>= 254</th> 
+      </tr>
+    </table>
+
+</br>
+</br>
+</br>
+    <p>Here is another example of binary addition:</p>
+    <table style="width:700px">
+      <tr>
+        <td></td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <th>244</th>
+      </tr>
+      <tr>
+        <td>+</td>
+        <td>1</td>
+        <td>0</td> 
+        <td>0</td> 
+        <td>0</td> 
+        <td>1</td> 
+        <td>0</td> 
+        <td>1</td> 
+        <td>0</td> 
+        <th>138</th> 
+      </tr>
+      <tr>
+        <th>(1)</th>
+        <th>1</th>
+        <th>1</th> 
+        <th>1</th> 
+        <th>1</th> 
+        <th>1</th> 
+        <th>1</th> 
+        <th>1</th> 
+        <th>0</th> 
+        <th>= 382</th> 
+      </tr>
+    </table>
+
+
+</br>
+</br>
+    <p>In this case the result is not in the form of an 8-bit number. If it goes beyond the 8-bit range it is known as an overflow error. An overflow error is caused when the processor does not have enough bytes available to process an instruction. There is an extra bit which cannot fit into the 8-bits as the result is greater than 255 of 11111111</p>
+
+
+    <h3 class="tital">Hexadecimal</h3>
+
+    <p>Hexadecimal is a base-16 number system meaning meaning it is made up of 16 different symbols: 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E and F. Hexadecimal is often used by programmers as it is easier to read and quicker to use.</p>
+
+    <table style="width:450px">
+      <tr>
+        <th>Denary (Base-10)</th>
+        <th>Binary (Base-2)</th>
+        <th>Hexadecimal (Base-16)</th>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>0000</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>0001</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>0010</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>0011</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>0100</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>0101</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>0110</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>0111</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>1000</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>1001</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>1010</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>1011</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>1100</td>
+        <td>C</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>1101</td>
+        <td>D</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>1110</td>
+        <td>E</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>1111</td>
+        <td>F</td>
+      </tr>
+    </table>
+
+</br>
+    <p>You will also need to know how to convert hexadecimal to other number systems.
+    In this example we will convert 24 in hexadecimal to denary. We need to use a column method like this:</p>
+
+    <table style="width:200px">
+      <tr>
+        <th>16</th>
+        <th>1</th>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>16 x 2 = 32</td>
+        <td>4 x 1 = 4</td>
+      </tr>
+    </table>
+
+</br>
+</br>
+    <p>32 + 4 = 36 </br>
+    This means 24 in hexadecimal is 36 in denary.</p>
+</br>
+</br>
+    <p>Here is another example using a letter from the hexadecimal table:</p>
+    
+    <table style="width:200px">
+      <tr>
+        <th>16</th>
+        <th>1</th>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>D</td>
+      </tr>
+      <tr>
+        <td>16 x 3 = 48</td>
+        <td>13 x 1 = 13</td>
+      </tr>
+    </table>
+
+
+</br>
+</br>
+    <p>48 + 13 = 61 <br>
+    This means 3D in hexadecimal is 61 in denary.</p>
+
+    <p>There are many ways to convert denary to hexadecimal but you should learn this method. In this example we will convert from 45 in denary to hexadecimal.
+    First we convert 45 into binary using the method from before which you can learn about here: <span><a href="#converting">(If needed go back and take a look at converting using binary to remind yourself)</a></span></p>
+
+    <p>45 is 00101101. We then convert that into 2 nibbles and calculate the value of each nibble.</p>
+
+    <table style="width:700px">
+      <tr>
+        <th>8</th>
+        <th>4</th>
+        <th>2</th>
+        <th>1</th>
+        <th>---</th>
+        <th>8</th>
+        <th>4</th>
+        <th>2</th>
+        <th>1</th>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td> 
+        <td>0</td> 
+        <td>---</td> 
+        <td>1</td> 
+        <td>1</td> 
+        <td>0</td> 
+        <td>1</td> 
+      </tr>
+      <tr>
+        <th colspan="4">0+0+2+0 = 2</th>
+        <th>---</th>
+        <th colspan="4">8+4+0+1 = 13 = D</th> 
+      </tr>
+    </table>
+
+</br>
+</br>
+    <p>We then just put the two results next to each other which gives us: 2D.
+This means 45 in denary is 2D in hexadecimal.</p>
+
+</br>
+    <p>Here is another example with 237. Using the other method we know 237 is 11101101. We now convert it into 2 nibbles and calculate the value of each nibble.</p>
+
+    <table style="width:700px">
+      <tr>
+        <th>8</th>
+        <th>4</th>
+        <th>2</th>
+        <th>1</th>
+        <th>---</th>
+        <th>8</th>
+        <th>4</th>
+        <th>2</th>
+        <th>1</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td> 
+        <td>0</td> 
+        <td>---</td> 
+        <td>1</td> 
+        <td>1</td> 
+        <td>0</td> 
+        <td>1</td> 
+      </tr>
+      <tr>
+        <th colspan="4">8+4+2+0 = 14 = E</th>
+        <th>---</th>
+        <th colspan="4">8+4+0+1 = 13 = D</th> 
+      </tr>
+    </table>
+
+</br>
+</br>
+    <p>We then just put the two results next to each other which gives us: ED.
+This means 237 in denary is ED in hexadecimal.</p>
+
+    <iframe width="545" height="300" src="https://www.youtube.com/embed/Ft7IdQYu0Zk" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+    </div>
+
+
+<style type="text/css">
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html, body, { height: 100%; }
+body > { height: auto; min-height: 100%; }
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(../../FONTS/BebasNeue.otf);
+}
+
+@font-face {
+    font-family: Imaginefont;
+    src: url(../../FONTS/imagine_font.otf);
+}
+
+html, body{
+    margin:0px; padding:0px;
+    background: #e6e6e6;
+}
+
+h1{
+    color: #0093B4;
+    margin:0px;
+    font-family: 'BebasNeue', 'Raleway', sans-serif;
+    font-weight:400;
+    font-size:52px;
+    text-transform: uppercase;
+}
+
+h2{
+    color: #63295C;
+    font-family: 'BebasNeue', 'Raleway', sans-serif;
+    font-weight:400;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+p{
+  font-family: 'Noto Sans', sans-serif; 
+  font-size:14px;
+
+}
+
+.heading {
+    margin-top: 50px;
+    background: #eeeeff;
+    border-top: 7.5px solid #63295C;
+    border-bottom: 7.5px solid #63295C;
+    min-height: 125px;
+    width: 100%;
+    position: relative;
+}
+
+#spec {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 500px;
+    bottom: -40px;
+}
+
+.tit{
+    text-align: center;
+    margin-left: 300px;
+    margin-top: 15px;
+    font-size: 50px;
+}
+
+#selection {
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #eeeeff;
+    height: 4900px;
+    width: 900px;
+}
+
+.tital {
+    color: #00465a;
+    font-family: 'BebasNeue', 'Raleway', sans-serif;
+    font-weight:400;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 50px 0px 0px 100px;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+table {
+    position: relative;
+    top: 25px;
+    margin: 0 auto;
+}
+
+#vids {
+    text-align: center;
+    position: relative;
+}
+
+.vidsin {
+    display: inline;
+}
+
+ol {
+    position: relative;
+    margin-left: 150px;
+}
+
+li {
+    font-family: arial;
+    font-size: 20px;
+    padding: 10px 100px 0px 0px;
+}
+
+p {
+    font-family: arial;
+    font-size: 20px;
+    padding: 20px 100px 0px 100px;
+}
+
+iframe {
+    position: relative;
+    margin: 110px;
+    margin-top: 75px;
+    border: 10px solid #00465a;
+}
+
+.sub {
+    position: relative;
+    margin: 5px;
+    left: 30px;
+    border: 10px solid #00465a;
+}
+
+sup {
+    font-size: 12px;
+    vertical-align: super;
+}
+
+span {
+    font-size: 15px;
+
+}
+
+
+</style>
+
+</body>
+
+</html>
+
+
+
+
+
+

@@ -1,0 +1,312 @@
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html, body, { height: 100%; }
+body > { height: auto; min-height: 100%; }
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(FONTS/BebasNeue.otf);
+}
+
+@font-face {
+    font-family: Imaginefont;
+    src: url(FONTS/imagine_font.otf);
+}
+
+html, body{
+	margin:0px; padding:0px;
+ 	background-color: #e6e6e6;
+}
+
+header {
+	z-index: 1;
+	position:absolute; 
+	width:100%; 
+ 	height:60px; 
+ 	display:inline-block; 
+  background-color: ;
+}
+
+header a {
+  color: #00465a;
+  font-size: 40px;
+  padding: 50px 135px; 
+  height: 60px;
+  line-height: 60px; 
+  text-align: center;
+  font-family: 'BebasNeue', 'Imaginefont'; 
+  text-decoration: none;
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+}
+
+.button {
+  color: #00465a;
+  background-color: transparent;
+  font-family: 'BebasNeue', 'Imaginefont'; 
+  text-align: center;
+  margin: auto;
+  font-size: 40px;
+  border: 3px solid #00465a;
+  border-radius: 0px;
+  padding: 20px;
+  width: 250px;
+  transition: all 0.2s ease 0s;
+}
+
+.button:hover {
+  color: white;
+  background-color: #00465a;
+  border: 3px solid #00465a
+}
+
+#tit {
+  position: relative;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+#logo {
+  position: relative;
+  top: 5px;
+  left: 130px;
+  float: left;
+  height: 45px;
+  width: 56px;
+}
+
+.nav {
+  z-index: 1;
+  position: absolute;
+  width:100%;
+  height: 60px;
+  right: 120px;
+  font-size: 20px;
+}
+
+.nav a{
+  z-index: 1;
+  color: grey;
+  display: inline-block;
+  padding: 0px 10px;
+  height: 50px;
+  line-height: 75px;
+  text-align: center;
+  font-family: 'BebasNeue', 'Raleway', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav a:hover{
+  z-index: 1;
+  color: #2f4f4f;
+  background: white;
+  display: inline-block;
+  padding: 0px 10px;
+  height: 50px;
+  text-align: center;
+  font-family: 'BebasNeue', 'Raleway', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.7s ease 0s;
+}
+
+.nav-links {
+  margin-top: 0px;
+  text-align: center;
+  float: right;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.slice, .content{
+  text-align:center; 
+  position:relative;
+  width: 100%;
+}
+
+#slice-top {
+ 	background: url(VECTORS/background3.png);
+  background-size: cover;
+  background-position:center center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+}
+
+.inner{
+  min-height:375px;
+  position: relative;
+}
+
+#bar1 {
+	background-color: #0093B4;
+	border-top: 2px solid #add8e6;
+  position: relative;
+}
+
+#bar1, .inner {
+  position: relative;
+  height: 340px;
+}
+
+#bar1 .copy {
+	text-transform: uppercase;
+  font-family: 'BebasNeue', 'Raleway', sans-serif;
+  color: white;
+}
+
+.info {
+  padding-top: 70px;
+}
+
+.info li{
+  color: rgba(230,230,230,0.8);
+  font-size: 17px;
+  letter-spacing: 1px;
+  text-align: justify;
+  display: inline-block;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.para {
+  padding-top: 20px;
+  width: 250px;
+}
+
+.vectors {
+  position: relative;
+  margin: 40px;
+  bottom: 145px;
+}
+
+#bar2 {
+	background-color: #00465a;
+}
+/*
+iframe {
+  position: relative;
+  left: -220px;
+  bottom: 345px;
+}
+*/
+#action {
+  color: #bbc;
+  position: relative;
+  margin: 0 auto;
+  bottom: 90px;
+}
+
+#excon {
+  position: relative;
+  bottom: 130px;
+}
+
+.examples {
+  margin: 50px;
+  border: 7.5px solid #0093B4;
+}
+
+
+
+#sub {
+  width: 500px;
+  color: #6f8b9d;
+  text-align: justify;
+  font-family: 'BebasNeue', 'Raleway', sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+*/
+
+#bar3 {
+	background-color: #e6e6e6;
+}
+
+#noobs h1 {
+  margin-left: 40px;
+  margin-right: 40px;
+  bottom: 90px;
+  font-family: 'BebasNeue', 'Raleway', sans-serif;
+  font-weight:400;
+  font-size:52px;
+  text-transform: uppercase;
+}
+
+
+
+#footer {
+  background: url(VECTORS/background2.png);
+}
+
+#footer-inner {
+  min-height:200px;
+  position: relative;
+}
+
+#foot-p {
+  text-align: center;
+  position: relative;
+  color: grey;
+  font-family: arial;
+  margin-top: 25px;
+  font-size: 25px;
+}
+
+.inner-bar{
+  min-height:390px;
+  position: relative;
+}
+
+
+.copy{
+  position:absolute; 
+  top:50%; 
+  height:10em; 
+  margin-top:-5em; 
+  width:100%;
+}
+
+.slice h1, .slice p{ 
+  color:#fff;
+}
+
+.content h1, .content p{
+  color:#333;
+}
+
+
+
+h1{
+  margin:0px;
+  font-family: 'BebasNeue', 'Raleway', sans-serif;
+  font-weight:400;
+  font-size:52px;
+  text-transform: uppercase;
+}
+
+p{
+  font-family: 'Noto Sans', sans-serif; 
+  font-size:14px;
+  padding:0px 20px;
+}
+
+

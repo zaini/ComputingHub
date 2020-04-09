@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Protocols and Packets</title>
+    <link rel="icon" type="image/png" href="../../apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../apple-touch-icon-76x76.png">
+</head>
+
+<body>
+    <div class="heading">
+        <div class="inner">
+            <h1 class="tit">Protocols</h1>
+            <img id="spec" src="../../VECTORS/spec.png">
+        </div>
+    </div>
+
+    <h2><a href="../../content.html">index</a> > 2.1.6 Computer communications and networking</h2>
+
+
+    <div id="selection">
+
+    <h3 class="tital">Protocols</h3>
+
+    <p>A protocol is a set of rules and standards for doing something which have been agreed on. These protocols are used to allow different devices to be compatible. The most widely accepted set of protocols for data transmission is called TCP/IP. It stands for Transmission Control Protocol/Internet Protocol. It is a de facto standard for data transmission over the internet.</p>
+
+    <h3 class="tital">Packets</h3>
+
+    <p>When you send a file it is broken into packets of data. Each packet is given a header which contains:</p>
+    <ul>
+        <li>The number of the packet</li>
+        <li>The total number of packets</li>
+        <li>The sender&#8217;s IP</li>
+        <li>The receiver&#8217;s IP</li>
+        <li>The time to live: a sort of autodestruction function, meaning if the packet hasn&#8217;t been delivered to the destination, it is destroyed.</li>
+        <li>The checksum: this number is checked at the intended destination to make sure that the packet hasn&#8217;t been corrupted.</li>
+    </ul>
+
+    <p>Packets that make up one bit of data, from one location may be sent in different routes depending on the data traffic conditions and availability of routes. This process makes sending information much more reliable and faster as packets take the quickest route to reach their destination. This is because other routes may be congested or down.</p>
+
+    <p>IP address (Internet Protocol): It is a 32-bit number for each device which allows data to be sent to and from it. There are static addresses which don&#8217;t change and dynamic addresses which do change, so the IP is not always the same. It is an unique identifier for each node in network. The internet uses TCP/IP to transmit data.</p>
+
+    <p>MAC (Media Access Control): Each network interface card has a unique static MAC address stored on it&#8217;s ROM. It allows devices on a network to be identified and enables compatibility between them if they follow this same protocol. It is a 48-bit number.</p>
+
+    </div>
+
+
+<style type="text/css">
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html, body, { height: 100%; }
+body > { height: auto; min-height: 100%; }
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(../../FONTS/BebasNeue.otf);
+}
+
+@font-face {
+    font-family: Imaginefont;
+    src: url(../../FONTS/imagine_font.otf);
+}
+
+html, body{
+    margin:0px; padding:0px;
+    background: #e6e6e6;
+}
+
+h1{
+    color: #0093B4;
+    margin:0px;
+    font-family: 'BebasNeue', 'Raleway', sans-serif;
+    font-weight:400;
+    font-size:52px;
+    text-transform: uppercase;
+}
+
+h2{
+    color: #63295C;
+    font-family: 'BebasNeue', 'Raleway', sans-serif;
+    font-weight:400;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+p{
+  font-family: 'Noto Sans', sans-serif; 
+  font-size:14px;
+
+}
+
+.heading {
+    margin-top: 50px;
+    background: #eeeeff;
+    border-top: 7.5px solid #63295C;
+    border-bottom: 7.5px solid #63295C;
+    min-height: 125px;
+    width: 100%;
+    position: relative;
+}
+
+#spec {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 400px;
+    bottom: -40px;
+}
+
+.tit{
+    text-align: center;
+    margin-left: 200px;
+    margin-top: 7px;
+    font-size: 50px;
+}
+
+#selection {
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #eeeeff;
+    height: 1150px;
+    width: 900px;
+}
+
+.tital {
+    color: #00465a;
+    font-family: 'BebasNeue', 'Raleway', sans-serif;
+    font-weight:400;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 50px 0px 0px 100px;
+}
+
+.sub-tital {
+    color: #00465a;
+    font-family: 'BebasNeue', 'Raleway', sans-serif;
+    font-weight:400;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 50px 0px 0px 100px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+table {
+    position: relative;
+    top: 25px;
+    margin: 0 auto;
+}
+
+ul {
+    padding-left: 150px;
+}
+
+li {
+    font-family: arial;
+    font-size: 20px;
+    padding: 10px 100px 0px 0px;
+}
+
+p {
+    font-family: arial;
+    font-size: 20px;
+    padding: 20px 100px 0px 100px;
+}
+
+iframe {
+    position: relative;
+    margin: 100px;
+    margin-top: 50px;
+    border: 10px solid #00465a;
+}
+
+span {
+    font-weight: bold;
+}
+
+
+</style>
+
+</body>
+
+</html>
+
+
+
+
+
+

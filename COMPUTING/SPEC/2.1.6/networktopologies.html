@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Networks Topologies</title>
+    <link rel="icon" type="image/png" href="../../apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../apple-touch-icon-76x76.png">
+</head>
+
+<body>
+    <div class="heading">
+        <div class="inner">
+            <h1 class="tit">Network</br>Topologies</h1>
+            <img id="spec" src="../../VECTORS/spec.png">
+        </div>
+    </div>
+
+    <h2><a href="../../content.html">index</a> > 2.1.6 Computer communications and networking</h2>
+
+
+    <div id="selection">
+
+    <h4 class="sub-tital">There are different ways to layout the network which allows them to perform things differently.</h4>
+
+    <h3 class="tital">Bus</h3>
+
+    <p>All the devices are connected to a single backbone cable. At the ends of that cable are terminators which prevent information from bouncing back and forth, interfering with other data being transmit.</p>
+    <table width="700px">
+        <tr>
+            <th>Advantages</th>
+            <th>Disadvantages</th>
+        </tr>
+        <tr>
+            <td>Does not require expertise so is easy to setup.</td>
+            <td>If the backbone cable fails, the entire network collapses.</td>
+        </tr>
+        <tr>
+            <td>Doesn&#8217;t require a lot of cabling so is very cheap.</td>
+            <td>Data collisions arise from information being sent both ways along one cable. This slow the the network down and can cause corrupt data.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Because all workstation are connected directly, every workstation can see the data on other workstations so there is a security risk.</td>
+        </tr>
+    </table>
+
+    <h3 class="tital">Ring</h3>
+
+    <p>Each device is connected to two other devices. This forms a ring for the signals to travel around. The data on the network only travels in one direction and each device transmits the data until it reaches its destination. Each device acts as a repeater which continues the signal.</p>
+    <table width="700px">
+        <tr>
+            <th>Advantages</th>
+            <th>Disadvantages</th>
+        </tr>
+        <tr>
+            <td>Can transfer data very quickly.</td>
+            <td>If any cable fails, the whole network goes down.</td>
+        </tr>
+        <tr>
+            <td>No data collision because all data travels in the same direction.</td>
+            <td>Data transfer can be slow if the request is coming from a device that is multiple devices away.</td>
+        </tr>
+        <tr>
+            <td>Data can travel along long distances because the workstations act as repeaters to keep the connection strong.</td>
+            <td>Has security risks because the data has to go through multiple devices.</td>
+        </tr>
+    </table>
+
+    <h3 class="tital">Star</h3>
+
+    <p>In a star network each devices has it&#8217;s own cable that connects to a switch or hub. A hub sends data to every device whereas a switch only sends data to the intended device. This means a switch has less security risks because not every device gets the data.</p>
+    <table width="700px">
+        <tr>
+            <th>Advantages</th>
+            <th>Disadvantages</th>
+        </tr>
+        <tr>
+            <td>Very reliable as it will continue to work if some wires are disconnected.</td>
+            <td>Expensive because it uses a lot of cables and hardware like hubs/switches.</td>
+        </tr>
+        <tr>
+            <td>High speed data transfer because there is no data collision.</td>
+            <td>If the hub or switch fail, the whole network goes down.</td>
+        </tr>
+    </table>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+    </div>
+
+
+<style type="text/css">
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html, body, { height: 100%; }
+body > { height: auto; min-height: 100%; }
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(../../FONTS/BebasNeue.otf);
+}
+
+@font-face {
+    font-family: Imaginefont;
+    src: url(../../FONTS/imagine_font.otf);
+}
+
+html, body{
+    margin:0px; padding:0px;
+    background: #e6e6e6;
+}
+
+h1{
+    color: #0093B4;
+    margin:0px;
+    font-family: 'BebasNeue', 'Raleway', sans-serif;
+    font-weight:400;
+    font-size:52px;
+    text-transform: uppercase;
+}
+
+h2{
+    color: #63295C;
+    font-family: 'BebasNeue', 'Raleway', sans-serif;
+    font-weight:400;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+p{
+  font-family: 'Noto Sans', sans-serif; 
+  font-size:14px;
+
+}
+
+.heading {
+    margin-top: 50px;
+    background: #eeeeff;
+    border-top: 7.5px solid #63295C;
+    border-bottom: 7.5px solid #63295C;
+    min-height: 125px;
+    width: 100%;
+    position: relative;
+}
+
+#spec {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 400px;
+    bottom: -40px;
+}
+
+.tit{
+    text-align: center;
+    margin-left: 200px;
+    margin-top: 7px;
+    font-size: 50px;
+}
+
+#selection {
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #eeeeff;
+    height: 1350px;
+    width: 900px;
+}
+
+.tital {
+    color: #00465a;
+    font-family: 'BebasNeue', 'Raleway', sans-serif;
+    font-weight:400;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 50px 0px 0px 100px;
+}
+
+.sub-tital {
+    color: #00465a;
+    font-family: 'BebasNeue', 'Raleway', sans-serif;
+    font-weight:400;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 50px 0px 0px 100px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+table {
+    position: relative;
+    top: 25px;
+    margin: 0 auto;
+}
+
+ul {
+    padding-left: 150px;
+}
+
+li {
+    font-family: arial;
+    font-size: 20px;
+    padding: 10px 100px 0px 0px;
+}
+
+p {
+    font-family: arial;
+    font-size: 20px;
+    padding: 20px 100px 0px 100px;
+}
+
+iframe {
+    position: relative;
+    margin: 100px;
+    margin-top: 50px;
+    border: 10px solid #00465a;
+}
+
+span {
+    font-weight: bold;
+}
+
+
+</style>
+
+</body>
+
+</html>
+
+
+
+
+
+
